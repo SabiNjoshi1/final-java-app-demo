@@ -5,9 +5,9 @@ phases:
     runtime-versions:
       java: corretto17
       commands:
-        - echo installing maven...
-        - apt-get update -y
-        - apt-get install -y maven
+      - echo installing maven...
+      - apt-get update -y
+      - apt-get install -y maven
   build:
     commands:
       - echo Build started on `date`
