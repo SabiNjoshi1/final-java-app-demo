@@ -5,8 +5,14 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class Controller {
-    @GetMapping("/aws")
-    public String getString(){
-        return "Welcome to Demo Java App";
+
+    @GetMapping("/welcome")
+    public String helloWorld(){
+        return "!! Welcome to Demo Java App!! ";
+    }
+
+    @GetMapping("/goodbye")
+    public String goodbye(){
+        return "!! Thank You !! ";
     }
 }
